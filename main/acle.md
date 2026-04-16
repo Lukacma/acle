@@ -11,7 +11,7 @@ toc: true
 ---
 
 <!--
-SPDX-FileCopyrightText: Copyright 2011-2025 Arm Limited and/or its affiliates <open-source-office@arm.com>
+SPDX-FileCopyrightText: Copyright 2011-2026 Arm Limited and/or its affiliates <open-source-office@arm.com>
 SPDX-FileCopyrightText: Copyright 2022 Google LLC.
 CC-BY-SA-4.0 AND Apache-Patent-License
 See LICENSE.md file for details
@@ -114,7 +114,7 @@ about Arm’s trademarks.
 
 ## Copyright
 
-* Copyright 2011-2024 Arm Limited and/or its affiliates <open-source-office@arm.com>.
+* Copyright 2011-2026 Arm Limited and/or its affiliates <open-source-office@arm.com>.
 * Copyright 2022 Google LLC.
 
 ## About this document
