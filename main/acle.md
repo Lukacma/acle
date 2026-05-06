@@ -4960,7 +4960,7 @@ The hint is a suggestion to the compiler and maps directly to a
 specific hint instruction variant in the ISA. The compiler may use this hint
 when selecting code sequences, but it is not required to emit a specific
 hint instruction or a specific instruction sequence. This intrinsic is
-type generic and supports scalar integer and pointer types of 8, 16, 32, and 64 bits.
+type generic and supports scalar integral and floating-point types of 8, 16, 32, and 64 bits.
 
 To access this intrinsic, `<arm_acle.h>` should be included.
 
