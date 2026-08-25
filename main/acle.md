@@ -3113,10 +3113,10 @@ The following table lists the architectures feature mapping for AArch64.
    | `FEAT_LUT`               | lut           | ```ID_AA64ISAR2_EL1.LUT >= 0b0001```      |
    | `FEAT_FAMINMAX`          | faminmax      | ```ID_AA64ISAR3_EL1.FAMINMAX >= 0b0001``` |
    | `FEAT_SME_LUTv2`         | sme-lutv2     | ```ID_AA64SMFR0_EL1.LUTv2 == 0b1```       |
-   | `FEAT_SME2p1`            | sme2p1        | ```ID_AA64SMFR0_EL1.SMEver >= 0b0010```   |
-   | `FEAT_SME2p2`            | sme2p2        | ```ID_AA64SMFR0_EL1.SMEver >= 0b0011```   |
-   | `FEAT_SVE2p1`            | sve2p1        | ```ID_AA64ZFR0_EL1.SVEver >= 0b0010```    |
-   | `FEAT_SVE2p2`            | sve2p2        | ```ID_AA64ZFR0_EL1.SVEver >= 0b0011```    |
+   | `FEAT_SME2p1`            | sme2p1        | ```ID_AA64PFR1_EL1.SME >= 0b0001 && ID_AA64SMFR0_EL1.SMEver >= 0b0010```|
+   | `FEAT_SME2p2`            | sme2p2        | ```ID_AA64PFR1_EL1.SME >= 0b0001 && ID_AA64SMFR0_EL1.SMEver >= 0b0011```|
+   | `FEAT_SVE2p1`            | sve2p1        | ```ID_AA64PFR0_EL1.SVE >= 0b0001 && ID_AA64ZFR0_EL1.SVEver >= 0b0010```|
+   | `FEAT_SVE2p2`            | sve2p2        | ```ID_AA64PFR0_EL1.SVE >= 0b0001 && ID_AA64ZFR0_EL1.SVEver >= 0b0011```|
    | `FEAT_SME_F16F16`        | sme-f16f16    | ```ID_AA64SMFR0_EL1.F16F16 == 0b1```      |
    | `FEAT_GCS`               | gcs           | ```ID_AA64PFR1_EL1.GCS >= 0b0001```       |
    | `FEAT_D128`              | d128          | ```ID_AA64MMFR3_EL1.D128 >= 0b0001```     |
@@ -3194,6 +3194,31 @@ unless otherwise specified.
    | rdma          | **202410**                |
    | mops          | 202410                    |
    | cssc          | **202520**                |
+   | fp8           | **202690**                |
+   | f8f32mm       | 202690                    |
+   | fp8dot4       | 202690                    |
+   | fp8fma        | 202690                    |
+   | sme-f8f32     | 202690                    |
+   | ssve-fp8dot4  | 202690                    |
+   | ssve-fp8fma   | 202690                    |
+   | ssve-bitperm  | 202690                    |
+   | lut           | 202690                    |
+   | faminmax      | 202690                    |
+   | sme-lutv2     | 202690                    |
+   | sme2p1        | 202690                    |
+   | sme2p2        | 202690                    |
+   | sve2p1        | 202690                    |
+   | sve2p2        | 202690                    |
+   | sme-f16f16    | 202690                    |
+   | gcs           | 202690                    |
+   | d128          | 202690                    |
+   | fp8dot2       | 202690                    |
+   | sme-f8f16     | 202690                    |
+   | f8f16mm       | 202690                    |
+   | sve-aes2      | 202690                    |
+   | sve-bfscale   | 202690                    |
+   | sve-f16f32mm  | 202690                    |
+   | sme-mop4      | 202690                    |
 
 ### Dependencies
 
